@@ -18,9 +18,10 @@ public class BlockDisappear : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.name == "testcube")
         {
-            Destroy (gameObject);
+            print ("trigger worked");
+            Destroy (other.gameObject);
         }
     }
 }

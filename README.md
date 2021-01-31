@@ -1,6 +1,6 @@
 # VR-Capstone
 Capstone Project:  VR Rhythm Game
-I create 4 function which are Waypoints, Move, Create and ObjDestroy
+I create 4 function which are Waypoints, Move, Create and ObjDestroy（those file in the asset file）
 Waypoint function can set the gameObject movement opint.
 Move function afe control the gameObjace movement'speed and time
 when user use mouse right botton, the Create function will create same Game object which I have set. 

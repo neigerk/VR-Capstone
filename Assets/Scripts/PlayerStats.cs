@@ -1,32 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerStats : MonoBehaviour
 {
      public TextMesh textHp;
      public TextMesh textEnergy;
+
+     [SerializeField]
      private int maxHp;
      private int currentHp;
+
+     [SerializeField]
      private int maxEnergy;
      private int currentEnergy;
+
+     public event Action<int, int> OnHpPctChanged = delegate { };
+     public event Action<int, int> OnEnergyPctChanged = delegate { };
+
+     private void Awake()
+     {
+          currentHp = maxHp;
+          currentEnergy = maxEnergy / 2;
+     }
 
      // Start is called before the first frame update
      void Start()
     {
-          maxHp = 100;
-          currentHp = maxHp;
-          maxEnergy = 100;
-          currentEnergy = 50;
-          SetHPText();
-          SetEnergyText();
+          ChangeCurrentEnergy(0);
+          ChangeCurrentHP(0);
     }
 
     // Update is called once per frame
     void Update()
     {
-          SetHPText();
-          SetEnergyText();
+          //SetHPText();
+          //SetEnergyText();
+          if (Input.GetKeyDown(KeyCode.LeftControl))
+               ChangeCurrentHP(-10);
+          if (Input.GetKeyDown(KeyCode.LeftAlt))
+               ChangeCurrentEnergy(-10);
      }
 
      //TEXT FUNCTIONS
@@ -68,10 +82,30 @@ public class PlayerStats : MonoBehaviour
      public void ChangeCurrentHP(int value)
      {
           currentHp = currentHp + value;
+          if (currentHp < 0)
+          {
+               currentHp = 0;
+          }
+          if (currentHp > maxHp)
+          {
+               currentHp = maxHp;
+          }
+
+          OnHpPctChanged(currentHp, maxHp);
      }
      public void ChangeCurrentEnergy(int value)
      {
           currentEnergy = currentEnergy + value;
+          if(currentEnergy < 0)
+          {
+               currentEnergy = 0;
+          }
+          if(currentEnergy > maxEnergy)
+          {
+               currentEnergy = maxEnergy;
+          }
+
+          OnEnergyPctChanged(currentEnergy, maxEnergy);
      }
 
 }

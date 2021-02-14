@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
  
-public class motion : MonoBehaviour
+public class O : MonoBehaviour
 {
  
     GameObject right_stream;

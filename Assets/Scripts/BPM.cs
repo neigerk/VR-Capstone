@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BPM : MonoBehaviour
 {
+     [SerializeField]
+     private GameObject CreateWall;
+
+     [SerializeField]
+     private GameObject[] Cubes;
      private static BPM _BPMInstance;
      public float bpm;
      private float beatInterval, beatTimer, beatIntervalD8, beatTimerD8;
@@ -45,6 +50,7 @@ public class BPM : MonoBehaviour
                beatFull = true;
                beatCountFull++;
                Debug.Log("Beat!");
+               //Instantiate()
           }
 
           //Eighth beat count

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0bb4fd41ba380ed4b97a312388ddbeee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - destroyedRedCube: {fileID: 3884487808879003109, guid: 733ce34d39648144ea4ada246c32b27d,
+      type: 3}
+  - destroyedBlueCube: {fileID: 801205408672659822, guid: 6f7a48db264e0564296916d11e86250a,
+      type: 3}
+  - destroyedWhiteCube: {fileID: 9058200342495134634, guid: 55c59bc0e111b9d4dbcf5413cc1b4dce,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

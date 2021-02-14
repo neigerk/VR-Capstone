@@ -13,39 +13,119 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-01-20T12:49:27.075+08:00
-  initializedAtString: 2021-01-20T12:10:57.317+08:00
-  localBranches: []
+  lastUpdatedAtString: 2021-02-14T03:18:08.361+08:00
+  initializedAtString: 2021-02-14T03:18:08.331+08:00
+  localBranches:
+  - name: 1
+    tracking: 
+  - name: dada
+    tracking: 
+  - name: main
+    tracking: origin/main
+  - name: master
+    tracking: 
+  - name: Xinpeng-Liu
+    tracking: origin/Xinpeng-Liu
   remoteBranches:
+  - name: origin/kevin
+    tracking: '[None]'
   - name: origin/main
+    tracking: '[None]'
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/Xinpeng-Liu
+    tracking: '[None]'
+  - name: origin/zachandkevintest
+    tracking: '[None]'
+  - name: origin/zachtest
     tracking: '[None]'
   remotes:
   - name: origin
-    url: git@github.com:LiuDanDanYA/Unity-Demo.git
+    url: https://github.com/neigerk/VR-Capstone.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - 1
+    - dada
+    - main
+    - master
+    - Xinpeng-Liu
+    values:
+    - name: 1
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: dada
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: main
+      remote:
+        name: origin
+        url: https://github.com/neigerk/VR-Capstone.git
+      trackingBranch: main
+    - name: master
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: Xinpeng-Liu
+      remote:
+        name: origin
+        url: https://github.com/neigerk/VR-Capstone.git
+      trackingBranch: Xinpeng-Liu
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - kevin
       - main
+      - master
+      - Xinpeng-Liu
+      - zachandkevintest
+      - zachtest
     subKeyValues:
     - Values:
+      - name: kevin
+        remote:
+          name: origin
+          url: https://github.com/neigerk/VR-Capstone.git
+        trackingBranch: 
       - name: main
         remote:
           name: origin
-          url: git@github.com:LiuDanDanYA/Unity-Demo.git
+          url: https://github.com/neigerk/VR-Capstone.git
+        trackingBranch: 
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/neigerk/VR-Capstone.git
+        trackingBranch: 
+      - name: Xinpeng-Liu
+        remote:
+          name: origin
+          url: https://github.com/neigerk/VR-Capstone.git
+        trackingBranch: 
+      - name: zachandkevintest
+        remote:
+          name: origin
+          url: https://github.com/neigerk/VR-Capstone.git
+        trackingBranch: 
+      - name: zachtest
+        remote:
+          name: origin
+          url: https://github.com/neigerk/VR-Capstone.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: git@github.com:LiuDanDanYA/Unity-Demo.git
+      url: https://github.com/neigerk/VR-Capstone.git

@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class BPM : MonoBehaviour
 {
-     [SerializeField]
-     private GameObject CreateWall;
+     public event Action BeatD8 = delegate { };
 
-     [SerializeField]
+    [SerializeField]
      private GameObject[] Cubes;
      private static BPM _BPMInstance;
      public float bpm;
@@ -26,6 +26,7 @@ public class BPM : MonoBehaviour
                _BPMInstance = this;
                DontDestroyOnLoad(this.gameObject);
           }
+          //beatController = GetComponentInParent<BeatController>();
      }
      // Start is called before the first frame update
      void Start()
@@ -63,6 +64,7 @@ public class BPM : MonoBehaviour
                beatD8 = true;
                beatCountD8++;
                Debug.Log("D8");
-          }
+               BeatD8();
+        }
      }
 }

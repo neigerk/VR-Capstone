@@ -8,7 +8,7 @@ public class remainsDisappear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("DeleteObj", 3); // delays for 3 seconds
+        Invoke("DeleteObj", 4); // delays for 4 seconds
     }
 
     // Update is called once per frame

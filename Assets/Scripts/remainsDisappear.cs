@@ -8,8 +8,7 @@ public class remainsDisappear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Stall());
-        Destroy(gameObject);
+        Invoke("DeleteObj", 3); // delays for 3 seconds
     }
 
     // Update is called once per frame
@@ -18,8 +17,8 @@ public class remainsDisappear : MonoBehaviour
 
     }
 
-    IEnumerator Stall()
+    private void DeleteObj()
     {
-        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }

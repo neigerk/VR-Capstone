@@ -641,6 +641,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 890164930779732568, guid: 6531dc5b55f791340a14d6e5af649f77, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890164930779732568, guid: 6531dc5b55f791340a14d6e5af649f77, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 890164930779732569, guid: 6531dc5b55f791340a14d6e5af649f77, type: 3}
       propertyPath: m_Name
       value: strike area

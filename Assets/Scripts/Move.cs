@@ -54,4 +54,18 @@ public class Move : MonoBehaviour {
 
     }
 
+    
+    //Returns true if the movement is complete
+    //Returns false if it needs to continue moving
+    public bool GetFinished()
+    {
+        if (index >= ways.Length)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
 }

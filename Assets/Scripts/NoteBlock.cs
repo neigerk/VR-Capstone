@@ -6,10 +6,11 @@ public class NoteBlock : MonoBehaviour
 {
      [SerializeField]
      public GameObject rubble;
+     private Move move;
      // Start is called before the first frame update
      private void Awake()
      {
-      
+         move = GetComponentInParent<Move>();
      }
      void Start()
     {
@@ -19,7 +20,10 @@ public class NoteBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (move.GetFinished())
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void Shatter()

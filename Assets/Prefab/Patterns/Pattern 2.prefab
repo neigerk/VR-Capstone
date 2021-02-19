@@ -16,6 +16,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 356728926430540965, guid: d5d91aea23692854886ebb2bf9c47f7c, type: 3}
     - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
+      propertyPath: Notes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
       propertyPath: Notes.Array.data[0].x
       value: -1
       objectReference: {fileID: 0}
@@ -45,6 +49,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
       propertyPath: Notes.Array.data[2].z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
+      propertyPath: Notes.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
+      propertyPath: Notes.Array.data[3].y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2313868656072558643, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}
+      propertyPath: Notes.Array.data[3].z
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2313868656072558644, guid: 18a3073fde0ad82468acc72d4a077978, type: 3}

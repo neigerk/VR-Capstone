@@ -29,6 +29,10 @@ public class Pattern : MonoBehaviour
                 next++;
                 Debug.Log("next: " + next.ToString());
                 Debug.Log("size: " + size.ToString());
+                if (next == size)
+                {
+                    break;
+                }
             }
         }
         if (next < size)

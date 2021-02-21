@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: 2020.2
+  companyName: TeamKXZ
+  productName: CapstoneVRGame
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -129,8 +129,8 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: -1369119203032989191, guid: 0face11ae555fc44e80c19082b533daf, type: 2}
   - {fileID: 11400000, guid: 3df90437a9dd3fc4899edd0154160dc2, type: 2}
+  - {fileID: -1900297261339678739, guid: 0face11ae555fc44e80c19082b533daf, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

@@ -1535,7 +1535,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618976103}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1618976105
 Camera:
   m_ObjectHideFlags: 0
@@ -2028,5 +2028,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyStats
       objectReference: {fileID: 0}
+    - target: {fileID: 3690993906804810039, guid: 08fea110b0e87c04ab26e40d1abe0625, type: 3}
+      propertyPath: destroyedRedCube
+      value: 
+      objectReference: {fileID: 3884487808879003109, guid: 733ce34d39648144ea4ada246c32b27d, type: 3}
+    - target: {fileID: 3690993906804810039, guid: 08fea110b0e87c04ab26e40d1abe0625, type: 3}
+      propertyPath: destroyedWhiteCube
+      value: 
+      objectReference: {fileID: 9058200342495134634, guid: 55c59bc0e111b9d4dbcf5413cc1b4dce, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08fea110b0e87c04ab26e40d1abe0625, type: 3}

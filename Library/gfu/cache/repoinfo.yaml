@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-01-31T01:40:43.264+08:00
-  initializedAtString: 2021-01-31T01:40:43.264+08:00
+  lastUpdatedAtString: 2021-02-27T07:47:47.428+08:00
+  initializedAtString: 2021-02-27T07:47:47.428+08:00
   currentGitRemote:
-    name: origin
-    url: git@github.com:LiuDanDanYA/Unity-Demo.git
+    name: 
+    url: 
     login: 
     user: 
     host: 
@@ -25,14 +25,14 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: main
-    tracking: origin/main
+    tracking: 
   currentConfigBranch:
     name: main
     remote:
-      name: origin
-      url: git@github.com:LiuDanDanYA/Unity-Demo.git
-    trackingBranch: main
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
-    name: origin
-    url: git@github.com:LiuDanDanYA/Unity-Demo.git
+    name: 
+    url: 
   currentHead: 

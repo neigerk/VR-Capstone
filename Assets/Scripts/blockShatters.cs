@@ -8,8 +8,6 @@ public class blockShatters : MonoBehaviour
     public GameObject destroyedRedCube;
     public GameObject destroyedBlueCube;
     public GameObject destroyedWhiteCube;
-    // public static bool destroyedWhite;
-    // public static bool destroyedBlue;
     private PlayerStats player;
     private EnemyStats enemy;
     private bool broken = false;
@@ -25,8 +23,6 @@ public class blockShatters : MonoBehaviour
     void Update()
     {
         broken = false;
-        // destroyedWhite = false;
-        // destroyedBlue = false;
     }
 
 
@@ -39,12 +35,8 @@ public class blockShatters : MonoBehaviour
                Instantiate(rubble, other.transform.position, other.transform.rotation);
                //if checks for white cube or blue cube to do effect in another script
                if (other.gameObject.GetComponent<Renderer>().material.name.Substring(0,1) == "W"){
-                    // print("destroyed a white cube!");
-                    // destroyedWhite = true;
                     enemy.ChangeCurrentHp(-1);
                } else if (other.gameObject.GetComponent<Renderer>().material.name.Substring(0,1) == "B"){
-                    // print("destroyed a blue cube!");
-                    // destroyedBlue = true;
                     player.ChangeCurrentEnergy(+1);
                } 
                Destroy(other.gameObject);

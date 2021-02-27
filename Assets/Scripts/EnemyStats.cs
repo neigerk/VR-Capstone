@@ -24,11 +24,9 @@ public class EnemyStats : MonoBehaviour
      // Update is called once per frame
      void Update()
     {
-          // if (Input.GetKeyDown(KeyCode.LeftControl))
-          //      ChangeCurrentHp(-10);
-          // if (blockShatters.destroyedWhite == true){
-          //      ChangeCurrentHp(-1);
-          // }
+          if (currentHp <= 0){
+               print("Enemy is dead.");
+          }
      }
 
      public void ChangeCurrentHp(int value)

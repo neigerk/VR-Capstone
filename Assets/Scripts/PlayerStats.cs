@@ -37,9 +37,10 @@ public class PlayerStats : MonoBehaviour
     {
           //SetHPText();
           //SetEnergyText();
-          if (currentHp <= 0){
-               print("You are dead.");
-          }
+          if (Input.GetKeyDown(KeyCode.LeftControl))
+               ChangeCurrentHP(-10);
+          if (Input.GetKeyDown(KeyCode.LeftAlt))
+               ChangeCurrentEnergy(-10);
      }
 
      //TEXT FUNCTIONS

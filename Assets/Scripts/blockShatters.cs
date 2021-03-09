@@ -8,21 +8,18 @@ public class blockShatters : MonoBehaviour
     public GameObject destroyedRedCube;
     public GameObject destroyedBlueCube;
     public GameObject destroyedWhiteCube;
-    private PlayerStats player;
-    private EnemyStats enemy;
     private bool broken = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("PlayerStats").GetComponent<PlayerStats>();
-        enemy = GameObject.Find("EnemyStats").GetComponent<EnemyStats>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        broken = false;
+          broken = false;
     }
 
 
@@ -33,12 +30,6 @@ public class blockShatters : MonoBehaviour
                NoteBlock nb = other.gameObject.GetComponent<NoteBlock>();
                GameObject rubble = nb.rubble;
                Instantiate(rubble, other.transform.position, other.transform.rotation);
-               //if checks for white cube or blue cube to do effect in another script
-               if (other.gameObject.GetComponent<Renderer>().material.name.Substring(0,1) == "W"){
-                    enemy.ChangeCurrentHp(-1);
-               } else if (other.gameObject.GetComponent<Renderer>().material.name.Substring(0,1) == "B"){
-                    player.ChangeCurrentEnergy(+1);
-               } 
                Destroy(other.gameObject);
                broken = true;
                // NoteBlock nb = other.gameObject.GetComponent<NoteBlock>();

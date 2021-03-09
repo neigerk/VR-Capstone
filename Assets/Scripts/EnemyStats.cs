@@ -24,12 +24,11 @@ public class EnemyStats : MonoBehaviour
      // Update is called once per frame
      void Update()
     {
-          if (currentHp <= 0){
-               print("Enemy is dead.");
-          }
+          if (Input.GetKeyDown(KeyCode.LeftControl))
+               ChangeCurrentHp(-10);
      }
 
-     public void ChangeCurrentHp(int value)
+     void ChangeCurrentHp(int value)
      {
           currentHp += value;
           if (currentHp < 0)

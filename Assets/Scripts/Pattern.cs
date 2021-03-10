@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pattern : MonoBehaviour
 {
-    const float SpawnZ = 40;
+    const float SpawnDistance = 40;
     private int next, size;
     public GameObject noteBlock;
     [SerializeField]
@@ -25,7 +25,9 @@ public class Pattern : MonoBehaviour
             Notes[next].z--;
             while (Notes[next].z <= 0)
             {
-                Instantiate(noteBlock, new Vector3(Notes[next].x, Notes[next].y, SpawnZ), Quaternion.identity);
+                Vector3 loc = new Vector3(Notes[next].x, Notes[next].y, SpawnDistance);
+                loc = Vector3.Normalize(loc) * SpawnDistance;
+                Instantiate(noteBlock, loc, Quaternion.identity);
                 next++;
                 Debug.Log("next: " + next.ToString());
                 Debug.Log("size: " + size.ToString());

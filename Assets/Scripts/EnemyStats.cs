@@ -24,11 +24,10 @@ public class EnemyStats : MonoBehaviour
      // Update is called once per frame
      void Update()
     {
-          if (Input.GetKeyDown(KeyCode.LeftControl))
-               ChangeCurrentHp(-10);
+          
      }
 
-     void ChangeCurrentHp(int value)
+     public void ChangeCurrentHp(int value)
      {
           currentHp += value;
           if (currentHp < 0)

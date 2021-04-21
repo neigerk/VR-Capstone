@@ -26,6 +26,7 @@ public class MenuManager : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger))
             GoToPrevious();
+
     }
 
     public void GoToPrevious()

@@ -22,4 +22,5 @@ public class LevelCon01 : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

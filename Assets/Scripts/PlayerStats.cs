@@ -19,7 +19,10 @@ public class PlayerStats : MonoBehaviour
      public event Action<int, int> OnHpPctChanged = delegate { };
      public event Action<int, int> OnEnergyPctChanged = delegate { };
 
-     private void Awake()
+    [SerializeField]
+    FlashImage _flashImage = null;
+
+    private void Awake()
      {
           currentHp = maxHp;
           currentEnergy = maxEnergy / 2;
@@ -81,6 +84,10 @@ public class PlayerStats : MonoBehaviour
      }
      public void ChangeCurrentHP(int value)
      {
+          if (value < 0)
+          {
+               _flashImage.StartFlash(.25f, .5f, Color.red);
+          }
           currentHp = currentHp + value;
           if (currentHp < 0)
           {

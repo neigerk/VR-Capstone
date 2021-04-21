@@ -31,6 +31,19 @@ public class NoteBlock : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Entering Collision! " + other);
+        if (other.transform.tag == "BlockDestructionField")
+        {
+            if (gameObject.GetComponent<Renderer>().material.name.Substring(0, 1) == "R")
+            {
+                player.ChangeCurrentHP(-1);
+            }
+            Destroy(this.gameObject);
+        }
+    }
+    
 
     public void Shatter()
      {

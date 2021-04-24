@@ -9,7 +9,7 @@ public class CallMenu : MonoBehaviour
     private void Awake()
     {
         canvas = GetComponent<Canvas>();
-        //ovrcamerarig = GetComponent<OVRCameraRig>();
+        ovrcamerarig = GetComponent<OVRCameraRig>();
 
     }
 
@@ -18,9 +18,18 @@ public class CallMenu : MonoBehaviour
     {
         if (OVRInput.Get(OVRInput.Button.Two)){
         	Time.timeScale = 0;
-        	canvas.enabled = true;
-        	//trackingSpace.enabled = true;
+        	Show();
+
         } 
     
+    }
+     public void Show()
+    {
+        canvas.enabled = true;
+    }
+
+    public void Hide()
+    {
+        canvas.enabled = false;
     }
 }

@@ -5,12 +5,14 @@ using UnityEngine;
 public class CallMenu : MonoBehaviour
 {
 	private Canvas canvas = null;
-	private Transform trackingSpace = null;
+	public AudioClip bgaudioClip;
+	private AudioSource audio;
     private void Awake()
+
     {
         canvas = GetComponent<Canvas>();
-        ovrcamerarig = GetComponent<OVRCameraRig>();
-
+        audio = GetComponent<AudioSource>();
+        Invoke("PlayMusic", 6f);
     }
 
     // Update is called once per frame
@@ -18,18 +20,16 @@ public class CallMenu : MonoBehaviour
     {
         if (OVRInput.Get(OVRInput.Button.Two)){
         	Time.timeScale = 0;
-        	Show();
-
+		GetComponent<CanvasGroup>().alpha = 1;
+		GetComponent<CanvasGroup>().interactable = true;
+		GetComponent<CanvasGroup>().blocksRaycasts = true;
+		PauseMusic();
         } 
     
     }
-     public void Show()
+        public void PauseMusic()
     {
-        canvas.enabled = true;
+        audio.Pause();
     }
 
-    public void Hide()
-    {
-        canvas.enabled = false;
-    }
 }

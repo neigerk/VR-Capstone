@@ -7,7 +7,7 @@ public class BeatStream : MonoBehaviour
     [SerializeField]
     private GameObject noteBlock;
     [SerializeField]
-    private GameObject patternSource;
+    public GameObject patternSource;
     private PatternArray patterns;
     private Pattern current, next;
 

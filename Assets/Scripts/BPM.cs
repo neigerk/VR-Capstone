@@ -9,7 +9,8 @@ public class BPM : MonoBehaviour
 
     [SerializeField]
      private GameObject[] Cubes;
-     private static BPM _BPMInstance;
+     //private static BPM _BPMInstance;
+     public BPM _BPMInstance;
      public float bpm;
      private float beatInterval, beatTimer, beatIntervalD8, beatTimerD8;
      public static bool beatFull, beatD8;
@@ -24,7 +25,7 @@ public class BPM : MonoBehaviour
           else
           {
                _BPMInstance = this;
-               DontDestroyOnLoad(this.gameObject);
+               //DontDestroyOnLoad(this.gameObject);
           }
           //beatController = GetComponentInParent<BeatController>();
      }

@@ -30,7 +30,7 @@ public class attackTimer : MonoBehaviour
                 activated = true;
                 timeRemaining = 20;
                 playerHealth.ChangeCurrentEnergy(-25);
-            } else{ // player has too little energy/
+            } else{ // player has too little energy
                 unable = true;
                 timeRemaining = 2;
             }

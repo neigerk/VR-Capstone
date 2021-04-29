@@ -7,9 +7,10 @@ public class BeatStream : MonoBehaviour
     [SerializeField]
     private GameObject noteBlock;
     [SerializeField]
-    private GameObject patternSource;
+    public GameObject patternSource;
     private PatternArray patterns;
     private Pattern current, next;
+    private attackTimer attackTimer;
 
     private void Awake()
     {
@@ -17,8 +18,7 @@ public class BeatStream : MonoBehaviour
         current = PickNewPattern();
         next = PickNewPattern();
         GetComponentInParent<BPM>().BeatD8 += PlayPattern;
-
-
+        attackTimer = GameObject.Find("AttackTimer").GetComponent<attackTimer>();
     }
     // Start is called before the first frame update
     void Start()
@@ -34,10 +34,20 @@ public class BeatStream : MonoBehaviour
 
     private void PlayPattern()
     {
-        int swapper = current.Play();
-        if (swapper == 0)
-        {
-            SwapPattern();
+        if(noteBlock.tag != "whiteNoteBlock"){ // this will spawn red and blue blocks all the time
+            int swapper = current.Play();
+            if (swapper == 0)
+            {
+                SwapPattern();
+            }
+        } else{
+            if (attackTimer.activated == true){ // only spawns white blocks during activated attack
+                int swapper = current.Play();
+                if (swapper == 0)
+                {
+                    SwapPattern();
+                }
+            }
         }
     }
 

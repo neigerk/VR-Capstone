@@ -7,6 +7,7 @@ public class CallMenu : MonoBehaviour
 {
     private Canvas canvas = null;
     public AudioClip bgaudioClip;
+    public int E;
     private AudioSource audio;
     private void Awake()
 
@@ -14,6 +15,8 @@ public class CallMenu : MonoBehaviour
         canvas = GetComponent<Canvas>();
         audio = GetComponent<AudioSource>();
         bgaudioClip = GetComponent<AudioClip>();
+
+
     }
 
     // Update is called once per frame
@@ -22,24 +25,42 @@ public class CallMenu : MonoBehaviour
         if (OVRInput.Get(OVRInput.RawButton.B))
         {//button B
             Time.timeScale = 0;
-            GetComponent<CanvasGroup>().alpha = 1;
-            GetComponent<CanvasGroup>().interactable = true;
-            GetComponent<CanvasGroup>().blocksRaycasts = true;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().alpha = 1;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().interactable = true;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().blocksRaycasts = true;
             PauseMusic();
         }
         if (OVRInput.Get(OVRInput.RawButton.X))
         {//button X
             Time.timeScale = 1;
-            GetComponent<CanvasGroup>().alpha = 0;
-            GetComponent<CanvasGroup>().interactable = false;
-            GetComponent<CanvasGroup>().blocksRaycasts = false;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().alpha = 0;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().interactable = false;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().blocksRaycasts = false;
             UnpauseMusic();
         }
         if (OVRInput.Get(OVRInput.RawButton.Y))
         {//button Y
             SceneManager.LoadScene(0);
             Time.timeScale = 1;
+
         }
+        if((GameObject.Find("EnemyStats").GetComponent<EnemyStats>().currentHp==0))
+        {
+        	Time.timeScale = 0;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().alpha = 1;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().interactable = true;
+            GameObject.Find("Canvas").GetComponent<CanvasGroup>().blocksRaycasts = true;
+            PauseMusic();        
+        }
+        if((GameObject.Find("PlayerStats").GetComponent<PlayerStats>().currentHp==99))
+        {
+        	Time.timeScale = 0;
+            GameObject.Find("CanvasLose").GetComponent<CanvasGroup>().alpha = 1;
+            GameObject.Find("CanvasLose").GetComponent<CanvasGroup>().interactable = true;
+            GameObject.Find("CanvasLose").GetComponent<CanvasGroup>().blocksRaycasts = true;
+            PauseMusic();        
+        }
+
     }
     public void PauseMusic()
     {

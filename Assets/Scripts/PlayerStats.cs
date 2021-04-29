@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
 
      [SerializeField]
      private int maxHp;
-     private int currentHp;
+     public int currentHp;
 
      [SerializeField]
      private int maxEnergy;

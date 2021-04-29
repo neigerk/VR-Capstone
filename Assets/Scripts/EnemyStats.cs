@@ -7,7 +7,7 @@ public class EnemyStats : MonoBehaviour
 {
      [SerializeField]
      private int maxHp;
-     private int currentHp;
+     public int currentHp;
 
      public event Action<int, int> OnHpPctChanged = delegate { };
 

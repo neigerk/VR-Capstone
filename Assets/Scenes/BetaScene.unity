@@ -267,7 +267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: continue
+  m_Text: restart
 --- !u!222 &28873988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press X to
+  m_Text: Press A to
 --- !u!222 &80246546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1012,7 +1012,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: continue
+  m_Text: restart
 --- !u!222 &205717276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 208123718}
   - component: {fileID: 208123717}
   m_Layer: 5
-  m_Name: continue
+  m_Name: restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 361145991}
   - component: {fileID: 361145990}
   m_Layer: 5
-  m_Name: continue
+  m_Name: restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2564,7 +2564,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Main Menu
 --- !u!222 &865633330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2597,7 +2597,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866520990}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f63cf73ceba53f24bbf354de961d80f9, type: 3}
@@ -2937,8 +2937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea91f10f20080cb48b0b650690061754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgaudioClip: {fileID: 8300000, guid: f63cf73ceba53f24bbf354de961d80f9, type: 3}
-  E: 0
+  bgaudioClip: {fileID: 0}
+  audio: {fileID: 0}
 --- !u!1 &884516958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,7 +3558,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Main Menu
 --- !u!222 &1162224637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3711,7 +3711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgaudioClip: {fileID: 8300000, guid: f63cf73ceba53f24bbf354de961d80f9, type: 3}
-  E: 0
+  audio: {fileID: 0}
 --- !u!114 &1195966935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3950,7 +3950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgaudioClip: {fileID: 8300000, guid: f63cf73ceba53f24bbf354de961d80f9, type: 3}
-  E: 0
+  audio: {fileID: 0}
 --- !u!114 &1220320962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4310,7 +4310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press X to
+  m_Text: Press A to
 --- !u!222 &1414213131
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5121,7 +5121,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Main Menu
 --- !u!222 &1984344986
 CanvasRenderer:
   m_ObjectHideFlags: 0

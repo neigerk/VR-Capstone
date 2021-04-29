@@ -1252,7 +1252,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 150}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &378139501
 MonoBehaviour:
@@ -1281,15 +1281,16 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\tGame Rule\nUse your hands to break the blocks.\n\n\tIn  GAME\nPress
-    Button B to Call menu\nPress Button X to continue\nPress Button Y to back Main
-    menu"
+  m_Text: "\tGame Rule\nUse your hands to break the blocks.\nWhite cube can reduce
+    enemy HP\nred cube will dagme player Hp\n\n\tIn  GAME\n\nPress Button A to time
+    Attact \nWhen game Done button A can restart\nPress Button B to Call menu\nPress
+    Button X to continue\nPress Button Y to back Main menu"
 --- !u!222 &378139502
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -690,9 +690,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 395878363}
-        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
-        m_MethodName: StopAllCoroutines
+      - m_Target: {fileID: 2044522544}
+        m_TargetAssemblyTypeName: LevelCon01, Assembly-CSharp
+        m_MethodName: myExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1405,6 +1405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpm: 0
   audioClip: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!4 &388411139
 Transform:
   m_ObjectHideFlags: 0

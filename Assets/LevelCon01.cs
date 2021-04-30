@@ -11,7 +11,7 @@ public class LevelCon01 : MonoBehaviour
     }
     public void myLoad1()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("BetaScene");
     }
 
     public void myLoad2()

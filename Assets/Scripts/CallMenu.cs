@@ -44,8 +44,11 @@ public class CallMenu : MonoBehaviour
         	||((OVRInput.Get(OVRInput.RawButton.Y))&&(GameObject.Find("CanvasWin").GetComponent<CanvasGroup>().alpha == 1))
         	||((OVRInput.Get(OVRInput.RawButton.Y))&&(GameObject.Find("CanvasLose").GetComponent<CanvasGroup>().alpha == 1)))
         {//button Y
-            SceneManager.LoadScene(0);
             Time.timeScale = 1;
+            Destroy(GameObject.Find("OVRPlayerController"));
+            SceneManager.LoadScene("Hometest");
+            
+            
 
         }
         if((GameObject.Find("EnemyStats").GetComponent<EnemyStats>().currentHp==0))//when enemyStats hp= 0, game over

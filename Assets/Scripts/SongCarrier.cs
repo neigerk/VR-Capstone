@@ -10,22 +10,12 @@ public class SongCarrier : MonoBehaviour
     public float bpm;
     public AudioClip audioClip;
 
-    [SerializeField]
-    private GameObject canvas;
-
     private Scene currentScene;
 
     private void Awake()
     {
         Debug.Log(SceneManager.GetActiveScene().name);
         currentScene = SceneManager.GetActiveScene();
-        /*
-        if(SceneManager.GetActiveScene().name == "BetaScene")
-        {
-            GameObject.Find("Canvas").GetComponent<AudioSource>().clip = audioClip;
-            GameObject.Find("BPM").GetComponent<BPM>().bpm = bpm;
-        }
-        */
     }
 
     // Start is called before the first frame update

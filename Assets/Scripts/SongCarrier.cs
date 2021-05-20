@@ -9,6 +9,8 @@ public class SongCarrier : MonoBehaviour
 
     public float bpm;
     public AudioClip audioClip;
+    public GameObject boss;
+    //private GameObject bossParent;
 
     private Scene currentScene;
 
@@ -49,8 +51,11 @@ public class SongCarrier : MonoBehaviour
             GameObject.Find("Canvas").GetComponent<AudioSource>().clip = audioClip;
             GameObject.Find("BPM").GetComponent<BPM>().bpm = bpm;
             GameObject.Find("Canvas").GetComponent<AudioSource>().Play();
-
-
+            GameObject bossParent = GameObject.Find("BossParent");
+            GameObject child = Instantiate(boss);
+            child.transform.parent = bossParent.transform;
+            child.transform.position += bossParent.transform.position;
+            child.transform.rotation *= bossParent.transform.rotation;
         }
     }
 }

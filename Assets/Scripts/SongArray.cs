@@ -6,6 +6,7 @@ public class SongArray : MonoBehaviour
 {
     public AudioClip[] audioClips;
     public float[] bpms;
+    public GameObject[] bosses;
     private SongCarrier songCarrier;
     // Start is called before the first frame update
     private void Awake()
@@ -27,5 +28,6 @@ public class SongArray : MonoBehaviour
     {
         songCarrier.audioClip = audioClips[num];
         songCarrier.bpm = bpms[num];
+        songCarrier.boss = bosses[num];
     }
 }

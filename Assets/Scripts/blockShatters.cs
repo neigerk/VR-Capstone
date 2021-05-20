@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class blockShatters : MonoBehaviour
 {
-
+    public GameObject Bolt;
     public GameObject destroyedRedCube;
     public GameObject destroyedBlueCube;
     public GameObject destroyedWhiteCube;
@@ -35,6 +35,7 @@ public class blockShatters : MonoBehaviour
                Instantiate(rubble, other.transform.position, other.transform.rotation);
                if (other.gameObject.GetComponent<Renderer>().material.name.Substring(0,1) == "W")
                {
+                    Instantiate(Bolt, other.gameObject.transform.position, new Quaternion(-180, 0, 0, 0));
                     enemy.ChangeCurrentHp(-1);
                } else if(other.gameObject.GetComponent<Renderer>().material.name.Substring(0, 1) == "B")
                {

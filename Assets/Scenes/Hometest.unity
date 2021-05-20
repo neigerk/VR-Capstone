@@ -1124,6 +1124,10 @@ MonoBehaviour:
   - 113.35
   - 136.98
   - 104
+  bosses:
+  - {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
+  - {fileID: 135260, guid: 54dd8ae60378d5143b14a2e5e6a8da1e, type: 3}
+  - {fileID: 1000010746331740, guid: f85e3056e6d31594d8f370d05da256ff, type: 3}
 --- !u!1 &348199512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpm: 0
   audioClip: {fileID: 0}
+  boss: {fileID: 0}
 --- !u!4 &388411139
 Transform:
   m_ObjectHideFlags: 0

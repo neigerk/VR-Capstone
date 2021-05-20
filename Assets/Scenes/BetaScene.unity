@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4fd41ba380ed4b97a312388ddbeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bolt: {fileID: 735918375549629517, guid: cdc47e69bb2f55043bddae3851d64545, type: 3}
   destroyedRedCube: {fileID: 3884487808879003109, guid: 733ce34d39648144ea4ada246c32b27d, type: 3}
   destroyedBlueCube: {fileID: 801205408672659822, guid: 6f7a48db264e0564296916d11e86250a, type: 3}
   destroyedWhiteCube: {fileID: 9058200342495134634, guid: 55c59bc0e111b9d4dbcf5413cc1b4dce, type: 3}
@@ -1940,6 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4fd41ba380ed4b97a312388ddbeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bolt: {fileID: 735918375549629517, guid: cdc47e69bb2f55043bddae3851d64545, type: 3}
   destroyedRedCube: {fileID: 3884487808879003109, guid: 733ce34d39648144ea4ada246c32b27d, type: 3}
   destroyedBlueCube: {fileID: 801205408672659822, guid: 6f7a48db264e0564296916d11e86250a, type: 3}
   destroyedWhiteCube: {fileID: 9058200342495134634, guid: 55c59bc0e111b9d4dbcf5413cc1b4dce, type: 3}
@@ -2075,7 +2077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &608080843
 Transform:
   m_ObjectHideFlags: 0
@@ -2574,6 +2576,10 @@ PrefabInstance:
     - target: {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
       propertyPath: m_Name
       value: CrabMonster 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5792744366562842766, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5794526363542072584, guid: 4e7afdf31c20ebf419ea38bf1d358719, type: 3}
       propertyPath: m_RootOrder
@@ -3275,7 +3281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036268663
 Transform:
   m_ObjectHideFlags: 0
@@ -5432,7 +5438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &2076023875
 MeshCollider:
   m_ObjectHideFlags: 0

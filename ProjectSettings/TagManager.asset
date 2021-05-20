@@ -8,9 +8,9 @@ TagManager:
   - redNoteBlock
   - whiteNoteBlock
   - BlockDestructionField
-  - Boss
   - EnergyLight
   - AlarmLight
+  - Boss
   layers:
   - Default
   - TransparentFX

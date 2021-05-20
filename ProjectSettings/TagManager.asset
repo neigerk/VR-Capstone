@@ -8,6 +8,8 @@ TagManager:
   - redNoteBlock
   - whiteNoteBlock
   - BlockDestructionField
+  - EnergyLight
+  - AlarmLight
   layers:
   - Default
   - TransparentFX
